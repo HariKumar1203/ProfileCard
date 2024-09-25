@@ -53,14 +53,7 @@ function Skillset(){
         skills.map((items)=>(
           <Skills skill={items.skill} level={items.level} color={items.color}/>
         ))
-      }
-      {/* <Skills name="Redux" color='yellow'/>
-      <Skills name="TypeScript" color='violet'/>
-      <Skills name="react" color='green'/>
-      <Skills name="HTML" color='orange'/>
-      <Skills name="CSS" color='red'/>
-      <Skills name="JavaScript" color='purple'/> */}
-      
+      }      
     </div>
   )
 }
