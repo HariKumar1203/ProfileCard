@@ -1,0 +1,39 @@
+.main-card{
+  width: 300px;
+  border-width: 10px;
+  border-color: black;
+  border: solid;padding-bottom: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.image{
+  width: 100%;
+  height: auto;
+}
+
+.card-1{
+  width: 80%;
+  margin: auto;
+}
+
+.heading{
+  font-size: 28px;
+}
+
+.skill-card-1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills{
+  height: 20px;
+  border-radius: 5px;
+  padding: 8px;
+  align-items: center;
+}
+
+.paragraph{
+  margin-top: 0px;
+  font-size: 10px;
+}
