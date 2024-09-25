@@ -1,4 +1,5 @@
 import './App.css';
+import Skillset from './Skillset';
 
 const skills = [
   {
@@ -40,35 +41,10 @@ function App() {
       <div className='card-1'>
         <h1 className='heading'>Edward Newgate</h1>
         <p>Full stack wed devloper and Project manager. When not coding i like to play games and have a stroll in the night</p>
-        <Skillset/>
+        <Skillset skills={skills}/>
       </div>
     </div>
   );
-}
-
-function Skillset(){
-  return(
-    <div className='skill-card-1' color='blue'>
-      {
-        skills.map((items)=>(
-          <Skills skill={items.skill} level={items.level} color={items.color}/>
-        ))
-      }      
-    </div>
-  )
-}
-
-function Skills({skill,color,level}){
-  return(
-    <div style={{backgroundColor:color}} className='skills'>
-      <span className='paragraph'>{skill}</span>
-      <span>
-        {level==="beginner" && "👶"}
-        {level==="intermediate" && "👍"}
-        {level==="advanced" && "💪"}
-      </span>
-    </div>
-  )
 }
 
 export default App;
